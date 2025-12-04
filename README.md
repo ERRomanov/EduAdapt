@@ -1,1 +1,1 @@
-# EduAdapt.github.io
+# EduAdapt
