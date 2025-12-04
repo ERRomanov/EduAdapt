@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="autor" content="yukagaro">
+    <meta name="copyright" content="yukagaro prod">
+    <link rel="stylesheet" href="css/style.min.css?_v=20251204181514">
+    <title>EduAdapt</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20251204181514"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css?_v=20251204181514"/>
+</head>
+</head>
+<body>
+    <header class="site-header">
+     <div class="logo">
+        <object data="img/eduadapt_logo.svg" type="image/svg+xml">
+            <img src="img/eduadapt_logo.svg" alt="">
+        </object>
+    </div>
+    
+    <nav class="navigation">
+        <a id="main-page" class="navigation__link active" data-page="download-page" href="">Главная</a>
+        <a id="student-dictionary" class="navigation__link" data-page="dictionary-page" href="">Словарь</a>
+        <a id="exercises" class="navigation__link" data-page="exercise-page" href="">Упражнения</a>
+        <a id="student-profile" class="navigation__link" data-page="profile-page" href="">Профиль</a>
+        <div class="navigation__button">
+            <a id="logout" class="navigation__link" href="authorization.html">Выход</a>
+            <object data="img/logout.svg" type="image/svg+xml">
+                <img src="img/logout.svg" alt="">
+            </object>
+        </div>
+    </nav>
+    
+</header>
+    <main>
+        <div class="_container">
+            <div id="download-page" class="page active">
+                
+<div class="download_main">
+    <div class="title_page">
+        <h1 class="title">Адаптация текста</h1>
+        <p class="subtitle">Анализ сложности текста с выделением трудных слов и предложений</p>
+    </div>
+    <div class="form_load">
+        <form class="form_load__form">
+            <div class="form_load__text">
+                <label for="text">Введите текст для анализа</label>
+                <textarea class="form_load__text__ft" id="text" name="text" rows="5" placeholder="Вставьте текст здесь или загрузите файл ..."></textarea>
+            </div>
+            <div class="form_load__or">
+                <p>или</p>
+            </div>
+            <div class="form_load__file">
+                <label for="file">Загрузить файл</label>
+                <label for="file" class="file-upload-area">
+                    <div class="upload-icon"><img src="img/load.svg" alt=""></div>
+                    <div class="upload-text">Нажмите для выбора файла</div>
+                    <div class="upload-hint">Поддерживаются: TXT, DOC, DOCX, PDF</div>
+                </label>
+                <input type="file" id="file" name="file" accept=".txt, .doc, .docx, .pdf">
+            </div>
+            <button type="submit" id="submit-btn" class="submit-btn">Адаптировать текст</button>
+        </form>
+    </div>
+</div>
+            </div>
+            <div id="result-page" class="page">
+                <div class="result">
+    <h1 class="result__main-title">Результат анализа</h1>
+    <div class="result__howuse">
+        <div class="info-icon">i</div>
+        <div class="info-content">
+            <h2>Как пользоваться</h2>
+            <p>
+                Сложные слова выделены желтым цветом. Наведите курсор на слово, чтобы увидеть определение и синонимы.
+            </p>
+        </div>
+    </div>
+
+    <div class="result__text">
+        <p>
+            Ирина, Максим и Сергей представляют три ключевых сегмента пользователей платформы аренды яхт: клиента, сотрудника и подрядчика. 
+            Их опыт взаимодействия и ожидания показывают, как можно улучшить сервис, чтобы он стал удобным, прозрачным и эффективным для всех сторон процесса. 
+            Ирина (Клиент) — ценит удобство и прозрачность бронирования. Ее главное ожидание - возможность быстро выбрать и оплатить яхту онлайн без долгих звонков и разъяснений. 
+            Для нее важны доверие к компании, интуитивно понятный 
+            <span class="highlight" data-tooltip="interface">интерфейс</span> 
+            и визуальная 
+            <span class="highlight" data-tooltip="reliability">достоверность</span> 
+            контента (фотографии, отзывы и рейтинги). 
+            Максим (сотрудник компании) — стремится 
+            <span class="highlight" data-tooltip="optimize">оптимизировать</span> 
+            рабочий процесс.
+        </p>
+    </div>
+
+    <hr class="result__line">
+
+    <div class="result__statistic">
+        <h2 class="result__stats-title">Статистика анализа</h2>
+        <div class="stats-cards-container">
+            <div class="stat-card">
+                <div class="stat-card__value">3</div>
+                <div class="stat-card__label">Сложных слов</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card__value">C1</div>
+                <div class="stat-card__label">Уровень сложности</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card__value">85%</div>
+                <div class="stat-card__label">Понятность</div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            <div id="dictionary-page" class="page">
+                <div class="admin">
+    <div class="_container">
+        <h2 class="admin__description">ФИО "Название дицсиплины"</h2>
+        <div class="generate">
+            <search>
+                <form class="generate__form">
+                    <input type="text" class="generate__field">
+                    <button class="generate__button">Сгенерировать</button>
+                </form>
+            </search>
+            <button class="generate__button generate__button-dictionary">Создать словарь</button>
+        </div>
+        <section class="dictionary">
+            <div class="dictionary__header">
+                <div>Слово</div>
+                <div>Значение</div>
+                <div>Пример</div>
+                <div>Синонимы</div>
+                <div>Другие значения</div>
+            </div>
+            <div class="dictionary__row">
+                <div class="dictionary__column">Программа</div>
+                <div class="dictionary__column">Последовательность формализованных инструкций, предназначенная для компьютера</div>
+                <div class="dictionary__column">Использовать программу для редактирования изображения</div>
+                <div class="dictionary__column">Алгоритм</div>
+                <div class="dictionary__column">Содержание концертных, цирковых представлений, радио- и телепередач</div>
+            </div>
+        </section>
+        <div class="generate__block">
+            <button class="generate__button generate__button-dictionary">Добавить</button>
+        </div>
+    </div>
+</div>
+            </div>
+            <div id="exercise-page" class="page">
+                <section class="exercise">
+    <div class="exercise__header">
+        <h2 class="exercise__heading">Упражнения</h2>
+        <h3 class="exercise__task">Выберите правильное определение для этого слова</h3>
+        <div class="exercise__status">
+            <div class="exercise__block">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="9" cy="9" r="9" fill="#8ACE78" />
+                </svg>
+                <p>Правильно: <output id="status-correct">0</output></p>
+            </div>
+            <div class="exercise__block">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="9" cy="9" r="9" fill="#DB7B53" />
+                </svg>
+                <p>Всего попыток: <output id="status-attempts">0</output></p>
+            </div>
+            <div class="exercise__block">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="9" cy="9" r="9" fill="#4384ED" />
+                </svg>
+                <p>Осталось: <output id="status-remaining">2</output></p>
+            </div>
+        </div>
+        <div class="exercise__progress">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+    <div class="exercise__container" id="exercise-content">
+        <p class="exercise__word">"Алгоритм"</p>
+        <p class="exercise__question">Выберите правильное определение:</p>
+        <form class="exercise__form">
+            <div class="exercise__answers answers">
+                <label class="answers__answer">
+                    <input type="radio" name="definition" value="1" class="answers__radio">
+                    <span class="answers__bullet">A</span>
+                    <p>Последовательность команд, которые должен выполнить компьютер</p>
+                </label>
+                <label class="answers__answer">
+                    <input type="radio" name="definition" value="2" class="answers__radio">
+                    <span class="answers__bullet">B</span>
+                    <p>Устройство для вывода данных в компьютер</p>
+                </label>
+            </div>
+            <button class="exercise__submit" type="button">Проверить</button>
+        </form>
+    </div>
+    <div class="exercise__results" id="exercise-results">
+        <div class="exercise__content">
+            <object data="img/cup.svg" type="image+xml">
+                <img src="img/cup.svg" alt="#">
+            </object>
+            <h2>Поздравляю!</h2>
+            <h3>Вы выполнили все упражнения.</h3>
+            <div class="exercise__stats">
+                <p class="exercise__quantity">Результат: <span id="results-correct">0</span> из <span id="results-total">0</span></p>
+                <p class="exercise__accuracy">Точность: <span id="results-percentage">0%</span></p>
+            </div>
+            <button class="exercise__restart">Начать заново</button>
+        </div>
+    </div>
+</section>
+            </div>
+            <div id="profile-page" class="page">
+                <div class="profile__container">
+    <div class="profile__block">
+        <h2>Профиль преподавателя</h2>
+        <form>
+            <div class="profile__card">    
+                <div class="card">
+                    <div class="card__form">
+                        <label for="info-FIO">ФИО</label>
+                        <input type="FIO" id="info-FIO" class="profile__input">
+                    </div>
+                    <div class="card__form">
+                        <label for="info-ISU">ИСУ</label>
+                        <input type="ISU" id="info-ISU" class="profile__input">
+                    </div>
+                </div>
+                <div class="profile__avatar">
+                    <object data="img/avatar.svg" type="image+xml">
+                        <img src="img/avatar.svg" alt="Аватар">
+                    </object>
+                </div>
+            </div>
+            <div class="profile__form">
+                <label for="info-email">Электронная почта</label>
+                <input type="email" id="info-email" class="profile__input">
+            </div>
+            <div class="profile__form">
+                <label for="info-faculty">Факультет</label>
+                <input type="faculty" id="info-faculty" class="profile__input">
+            </div>
+            <div class="profile__form">
+                <label for="info-group">Предмет</label>
+                <input type="group" id="info-group" class="profile__input">
+            </div>
+            <div class="profile__form">
+                <label for="info-langLevel">Должность</label>
+                <input type="langLevel" id="info-langLevel" class="profile__input">
+            </div>
+            <button type="submit" class="profile__button" id="submit-btn">Редактировать</button>
+        </form>
+    </div>
+    <div class="progress-card">
+        <div class="progress-card__container">
+            <div class="progress-card__streak">
+                <object data="img/streak.svg" type="image+xml">
+                    <img src="img/streak.svg" alt="Огонёк"  width="170" height="265">
+                </object>
+            </div>
+            <div class="progress-card__box progress-card__box-resize">
+                <h3>Блестяще!</h3>
+                <p class="progress-card__text progress-card__text-resize">
+                    Вы усердно занимаетесь уже
+                </p>
+                <p class="progress-card__count progress-card__count-resize">
+                    33
+                </p>
+                <p class="progress-card__text progress-card__text-resize">
+                    дней без перерыва
+                </p>
+            </div>
+        </div>
+        <div class="progress-card__container">
+            <div class="progress-card__cloud">
+                <object data="img/cloud.svg" type="">
+                    <img src="img/cloud.svg" alt="Облачко"  width="215" height="184">
+                </object>
+                <p class="progress-card__count progress-card__count-cloud">
+                    17
+                </p>
+            </div>
+            <div class="progress-card__box">
+                <h3>Хорошая работа!</h3>
+                <p class="progress-card__text">
+                    Вот, сколько слов Вы выучили за это время!
+                </p>
+                <p class="progress-card__text">
+                    Продолжайте в том же духе!
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.min.js?_v=20251204181514"></script>
+</body>
+</html>

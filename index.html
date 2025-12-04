@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="autor" content="yukagaro">
+    <meta name="copyright" content="yukagaro prod">
+    <link rel="stylesheet" href="css/style.min.css?_v=20251204181514">
+    <title>EduAdapt</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20251204181514"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css?_v=20251204181514"/>
+</head>
+</head>
+<body>
+    <header class="site-header">
+     <div class="logo">
+        <object data="img/eduadapt_logo.svg" type="image/svg+xml">
+            <img src="img/eduadapt_logo.svg" alt="">
+        </object>
+        </div> 
+        <nav class="main-nav">
+            <a class="main-nav__link" href="authorization.html">Вход и регистрация</a>
+        </nav>
+</header>
+    <main>
+         <div class="welcome-container">
+            <div class="logo_welc">
+            <img src="img/logo_welc.svg" alt="">
+            </div>
+            <div class="info-block">
+                <h2>Получай помощь</h2>
+                
+                <div class="info-cards-container">
+                    <div class="info-card">
+                        <div class="triangle-icon-1"></div>
+                        <p class="card-text">
+                            Пользуйся словарями и переводами лекций и учебных материалов, от преподавателей
+                        </p>
+                    </div>
+                    <div class="info-card">
+                        <div class="triangle-icon-2"></div>
+                        <p class="card-text">
+                            Тренируйся на карточках, словарях и тестах от других студентов
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-block">
+                <h2>Учиться стало проще</h2>
+                <div class="info-flex">
+                    <div class="wrapper">
+                    <button class="slider-arrow slider-arrow-prev" aria-label="Предыдущий слайд">
+                        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                    </button>
+                    <div class="slider">
+                        <div class="slider__item">
+                            <img src="img/slide1.svg" alt="Картинка 1">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/slide2.svg" alt="Картинка 2">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/slide3.svg" alt="Картинка 3">
+                        </div>
+                    </div>
+                    <button class="slider-arrow slider-arrow-next" aria-label="Следующий слайд">
+                        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="info-block">
+                <h2>Отслеживай прогресс</h2>
+                <div class="progress">
+                    <object data="img/progress_check.svg" type="image+xml">
+                        <img src="img/progress_check.svg" alt="">
+                    </object>
+                    <p>Прогресс в обучении будет отображаться в твоем профиле. Занимайся без перерыва, учи новые слова и получай награды</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.min.js?_v=20251204181514"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20251204181514" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?_v=20251204181514"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".slider").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                centerMode: true,
+                centerPadding: "0px",
+                autoplay: true,
+                autoplaySpeed: 10000,
+                dots: false,
+                arrows: true,
+                prevArrow: $('.slider-arrow-prev'), 
+                nextArrow: $('.slider-arrow-next')  
+            });
+        });
+    </script>
+</body>
+</html>

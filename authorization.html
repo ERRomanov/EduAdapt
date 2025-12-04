@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="autor" content="yukagaro">
+    <meta name="copyright" content="yukagaro prod">
+    <link rel="stylesheet" href="css/style.min.css?_v=20251204181514">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20251204181514"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css?_v=20251204181514"/>
+</head>
+</head>
+<body>
+    <header class="site-header">
+     <div class="logo">
+        <object data="img/eduadapt_logo.svg" type="image/svg+xml">
+            <img src="img/eduadapt_logo.svg" alt="">
+        </object>
+    </div>
+    
+</header>
+    <main class="log_reg">
+         <div class="auth-container">
+            <div id="login-form">
+                <div class="auth-form-card">
+                    <h1>Вход</h1>
+                    <form>
+                        <div class="form-group">
+                            <label for="login-email">Электронная почта</label>
+                            <input type="email" id="login-email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Пароль</label>
+                            <input type="password" id="login-password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">Подтвердить</button>
+                    </form>
+                </div>
+                <button type="button" id="show-register-form" class="btn btn-secondary">Зарегистрироваться</button>
+            </div>
+            <div id="register-form" class="hidden">
+                <div class="auth-form-card">
+                    <h1>Регистрация</h1>
+                    <form>
+                        <div class="form-group">
+                            <label for="register-name">ФИО</label>
+                            <input type="text" id="register-name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-name">Должность</label>
+                            <input type="text" id="register-post" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">Электронная почта</label>
+                            <input type="email" id="register-email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">Пароль</label>
+                            <input type="password" id="register-password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">Подтвердить</button>
+                    </form>
+                </div>
+                <button type="button" id="show-login-form" class="btn btn-secondary">Войти в уже существующмй аккаунт</button>
+            </div>
+
+        </div>
+    </main>
+    <script src="js/app.min.js?_v=20251204181514"></script>
+</body>
+</html>
